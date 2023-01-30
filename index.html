@@ -12,14 +12,31 @@
       <a href="/home" onclick="route()">Home</a>
       <a href="/theUniverse" onclick="route()">O Universo</a>
       <a href="/exploration" onclick="route()">Exploração</a>
+      <a href="/404" onclick="route()">404</a>
     </nav>
 
     <div id="app"></div>
 
     <script>
+
+      const routs = {
+        "/home": "/pages/home.html",
+        "/theUniverse": "/pages/universe.html",
+        "/exploration": "/pages/exploration.html",
+        404: "/pages/404.html"
+      }
       function route(event) {
         event = event || window.event
         event.preventDefault()
+
+        window.history.pushState({}, "", event.target.href)
+
+        handle()
+      }
+
+      function handle(){
+        const {pathname} = window.location
+        console.log(pathname)
       }
     </script>
   </body>
