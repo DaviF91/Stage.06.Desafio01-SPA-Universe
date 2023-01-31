@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>SPA Universe</title>
   </head>
   <body>
@@ -14,30 +15,11 @@
       <a href="/exploration" onclick="route()">Exploração</a>
       <a href="/404" onclick="route()">404</a>
     </nav>
-
+    
     <div id="app"></div>
 
-    <script>
-
-      const routs = {
-        "/home": "/pages/home.html",
-        "/theUniverse": "/pages/universe.html",
-        "/exploration": "/pages/exploration.html",
-        404: "/pages/404.html"
-      }
-      function route(event) {
-        event = event || window.event
-        event.preventDefault()
-
-        window.history.pushState({}, "", event.target.href)
-
-        handle()
-      }
-
-      function handle(){
-        const {pathname} = window.location
-        console.log(pathname)
-      }
-    </script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
+
+<!-- Orientação a Objetos no JavaScript 09:43 -->
