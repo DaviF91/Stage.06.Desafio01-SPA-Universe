@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: #C4C4CC;
+  --color-title: #E1E1E6;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeBackground {
+  background-image: url(./assets/home.png);
+}
+
+.universeBackground {
+  background-image: url(./assets/ouniverso.png);
+}
+
+.explorationBackground {
+  background-image: url(./assets/exploração.png);
+}
+
+nav {
+  height: 12rem;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  margin-left: 7.2rem;
+}
+
+nav img {
+  height: 4.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: var(--color-text);
+}
+
+nav a:hover {
+  font-weight: 700;
+  color: white;
+}
+
+#app {
+  padding-inline: 10rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  color: var(--color-title);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 17rem;
+  align-items: center;
+}
+
+button {
+  font-weight: 700;
+  color:white;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  background: none;
+  padding: 1.2rem 3.2rem;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: white;
+  color: #031d27;
+}
+
+.contentWrapper {
+  width: 62rem;
+  margin-top: 6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--color-text);
+  margin-top: 1.6rem;
+}
